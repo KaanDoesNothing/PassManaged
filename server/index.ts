@@ -84,4 +84,4 @@ api.post("/user/get_passwords", async (ctx) => {
 
 app.use(api.routes()).use(api.allowedMethods());
 
-app.listen({port: 6004});
+await app.listen({port: 6004});
